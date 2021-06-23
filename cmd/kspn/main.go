@@ -70,6 +70,9 @@ func init() {
 
 		// See utils/nodecmd/dumpconfigcmd.go:
 		nodecmd.GetDumpConfigCommand(nodeFlags, rpcFlags),
+
+		// See cmd/utils/flags_legacy.go
+		utils.ShowDeprecated,
 	}
 	sort.Sort(cli.CommandsByName(app.Commands))
 

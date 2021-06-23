@@ -73,6 +73,9 @@ func init() {
 
 		// See utils/nodecmd/db_migration.go:
 		nodecmd.MigrationCommand,
+
+		// See cmd/utils/flags_legacy.go
+		utils.ShowDeprecated,
 	}
 	sort.Sort(cli.CommandsByName(app.Commands))
 
